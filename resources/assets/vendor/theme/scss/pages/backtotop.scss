@@ -1,0 +1,63 @@
+/*!
+ * This file is part of Kabooodle.
+ * Copyright (c) 2017. Jacob Toolson <jake@kabooodle.com>
+ */
+
+#hs-beacon iframe,
+#back-to-top {
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#hs-beacon.beacon-offset iframe:first-child {
+  bottom: 176px !important;
+}
+#hs-beacon.beacon-offset iframe:not(:first-child):last-child {
+  bottom: 250px !important;
+}
+#back-to-top.beacon-offset {
+  bottom: 190px !important;
+}
+
+#hs-beacon.beacon-move iframe{
+  right: 64px !important;
+}
+#hs-beacon iframe{
+  right: 5px !important;
+}
+
+#back-to-top {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+  position: fixed;
+  height:54px;
+  bottom: 25px;
+  line-height: 34px;
+  right: 15px;
+  color:white;
+  z-index: 9999;
+  display: none;
+  border-radius:100%;
+  width:54px;
+}
+
+@media (max-width: 768px) {
+  #back-to-top {
+    bottom: 13px;
+  }
+}
+
+
+@media only screen and (max-device-width: 768px) {
+  #back-to-top {
+    height: 44px;
+    width: 44px;
+    padding: .4rem 1rem;
+    line-height:1.7;
+    .fa {
+      margin-left:-2px;
+    }
+  }
+}

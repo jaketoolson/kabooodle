@@ -1,0 +1,654 @@
+html, body {
+  background-color: #fff; }
+
+.home-content .checkbox-slider--b-flat input + span:before {
+  background: #f77a99; }
+
+.home-content .checkbox-slider--b-flat input:checked + span:before {
+  background: #9446ed; }
+
+.home-content .collapsing {
+  transition: none; }
+
+.home-content .collapseable.show {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0 0 0;
+  background: url(/assets/images/home/overlaybg.png) repeat;
+  z-index: 10000; }
+  .home-content .collapseable.show .navbar-toggler {
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px; }
+
+.home-content .navbar-toggler {
+  display: inline-block !important;
+  position: fixed;
+  top: 20px;
+  right: 19px;
+  color: #9446ed;
+  font-size: 25px;
+  z-index: 200; }
+
+.home-content .section {
+  height: 50rem;
+  padding: 50px 0;
+  postion: relative; }
+  .home-content .section.section-w-bg {
+    position: relative;
+    overflow: hidden; }
+    .home-content .section.section-w-bg .section-bg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      top: 0;
+      left: 0; }
+  .home-content .section .section-title {
+    position: relative;
+    font-family: 'Kreon', serif;
+    font-size: 70px;
+    line-height: 120px; }
+  .home-content .section .section-sub-title {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 50px;
+    line-height: 46px; }
+
+.home-content .row:last-child .card-as-list {
+  margin-bottom: 0; }
+
+.home-content .card-centered {
+  text-align: center; }
+  .home-content .card-centered .card-img-top {
+    margin: 0 auto; }
+
+.home-content .card-as-list {
+  clear: both;
+  margin-bottom: 65px; }
+  .home-content .card-as-list .card-icon {
+    width: 100px;
+    float: left; }
+    .home-content .card-as-list .card-icon img {
+      height: 100px;
+      width: 100px; }
+  .home-content .card-as-list .card-block {
+    width: 400px;
+    float: left;
+    padding-top: 0; }
+  .home-content .card-as-list .card-title {
+    margin-top: 0; }
+  .home-content .card-as-list .card-text {
+    font-size: 1.1rem;
+    line-height: 1.9rem; }
+
+.home-content .card-lg .card-title {
+  margin: 30px 0; }
+
+.home-content .hero {
+  padding: 0; }
+  .home-content .hero .section-bg {
+    background: transparent url(/assets/images/home/section_hero_bg.jpg) top center no-repeat;
+    background-size: cover; }
+  .home-content .hero .hero-header {
+    padding-top: 10px; }
+  .home-content .hero .navbar-nav {
+    display: block;
+    float: none;
+    text-align: center; }
+    .home-content .hero .navbar-nav .nav-item {
+      float: none;
+      display: block;
+      font-size: 30px;
+      line-height: 40px;
+      color: #fff;
+      margin: 0 0 5px 0; }
+      .home-content .hero .navbar-nav .nav-item a {
+        padding: 5px 0;
+        line-height: 1; }
+  .home-content .hero .hero-inner {
+    position: relative;
+    max-width: 44em;
+    padding-top: 40px; }
+  .home-content .hero .section-title {
+    margin-bottom: 15px;
+    font-size: 100px;
+    color: white;
+    font-weight: 700; }
+  .home-content .hero .section-sub-title {
+    font-size: 30px;
+    color: white;
+    line-height: 50px;
+    max-width: 16em; }
+    .home-content .hero .section-sub-title .sub-title-more {
+      white-space: nowrap;
+      padding-bottom: 20px;
+      font-weight: 800; }
+  .home-content .hero .cta.btn {
+    background-color: #9446ed;
+    color: #fff;
+    font-weight: 600; }
+
+@media (max-width: 992px) {
+  .home-content .hero .hero-inner {
+    max-width: 36em; }
+  .home-content .hero .section-title {
+    font-size: 70px;
+    line-height: 100px;
+    margin-bottom: 50px; }
+  .home-content .hero .section-sub-title {
+    font-size: 26px;
+    line-height: 50px;
+    max-width: 16em; } }
+
+.home-content .section-solutions {
+  height: 100rem; }
+  .home-content .section-solutions .wrapper-border {
+    border: 2px solid #eeeff2; }
+  .home-content .section-solutions .section-title,
+  .home-content .section-solutions .card-title {
+    color: #565f7e; }
+  .home-content .section-solutions .section-sub-title {
+    color: #bcbfd1; }
+  .home-content .section-solutions .card-title {
+    font-weight: 600; }
+  .home-content .section-solutions .card-text {
+    color: #687296; }
+
+.home-content .section-pricing {
+  min-height: 60rem; }
+  .home-content .section-pricing .section-bg {
+    background: transparent url(/assets/images/home/section_pricing_bg.jpg) top center no-repeat;
+    background-size: cover; }
+  .home-content .section-pricing .section-title {
+    color: #fff;
+    position: relative; }
+  .home-content .section-pricing .section-sub-title {
+    position: relative;
+    color: #c7eedf; }
+  .home-content .section-pricing .col-bg {
+    background: transparent url(/assets/images/home/pricing_col_bg.png) repeat; }
+  .home-content .section-pricing .row-eq-height {
+    display: -ms-flexbox;
+    display: flex; }
+  .home-content .section-pricing .row-pricing {
+    margin-top: 50px; }
+  .home-content .section-pricing .col-price {
+    padding: 15px 0 0 0;
+    margin: 0 12px; }
+    .home-content .section-pricing .col-price .subscription-name {
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 30px; }
+    .home-content .section-pricing .col-price .the-price {
+      color: #fff;
+      font-family: Kreon, serif;
+      font-weight: 700;
+      font-size: 90px;
+      margin-bottom: 50px; }
+    .home-content .section-pricing .col-price .features {
+      padding-bottom: 100px;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      margin: 0 auto; }
+      .home-content .section-pricing .col-price .features ul {
+        margin: 0;
+        padding: 0; }
+      .home-content .section-pricing .col-price .features li {
+        font-size: 19px;
+        list-style-type: none;
+        text-align: center;
+        color: #fff;
+        margin: 0 0 10px 0; }
+  .home-content .section-pricing .col-price-basic {
+    margin-top: 100px;
+    height: 558px; }
+  .home-content .section-pricing .col-price-merchant {
+    margin-top: 50px;
+    height: 608px; }
+  .home-content .section-pricing .col-price-merchant-plus {
+    margin-top: 0px;
+    height: 658px; }
+  .home-content .section-pricing .try-wrapper {
+    text-align: center;
+    margin: 20px auto 0; }
+
+.home-content .section-services .section-title,
+.home-content .section-services .card-title {
+  color: #565f7e; }
+
+.home-content .section-services .section-sub-title {
+  color: #bcbfd1; }
+
+.home-content .section-services .card-title {
+  font-weight: 600; }
+
+.home-content .section-services .card-text {
+  color: #687296;
+  font-size: 1.1rem;
+  line-height: 1.9rem; }
+
+.home-content .section-about .section-bg {
+  background: transparent url(/assets/images/home/section_about_bg.jpg) top center no-repeat;
+  background-size: cover; }
+
+.home-content .section-about .section-title {
+  color: #fff; }
+
+.home-content .section-about .section-sub-title {
+  color: #f5b9f6;
+  margin: 0 auto;
+  width: 90%; }
+
+.home-content .section-about .row-stats {
+  margin-top: 145px; }
+  .home-content .section-about .row-stats .stat-title {
+    color: #fff;
+    font-family: Kreon, serif;
+    font-size: 200px;
+    margin-bottom: 0px;
+    line-height: 180px; }
+  .home-content .section-about .row-stats .stat-subtitle {
+    color: #f5b9f6;
+    font-size: 34px; }
+
+.home-content .section-ready {
+  height: 24rem; }
+  .home-content .section-ready .section-bg {
+    background: transparent url(/assets/images/home/section_ready_bg.jpg) center no-repeat;
+    background-size: cover; }
+  .home-content .section-ready .section-title {
+    color: #fff; }
+  .home-content .section-ready .section-sub-title {
+    color: #cdc8eb; }
+  .home-content .section-ready .cta-group {
+    position: relative; }
+    .home-content .section-ready .cta-group .btn {
+      color: #fff;
+      font-weight: 700; }
+      .home-content .section-ready .cta-group .btn:last-of-type {
+        margin-left: 25px; }
+    .home-content .section-ready .cta-group .btn.cta-ready {
+      background: #30c283;
+      margin: 0 auto; }
+    .home-content .section-ready .cta-group .btn.cta-questions {
+      background: #9446ed; }
+
+.home-content .section-contact {
+  background-color: #fff; }
+  .home-content .section-contact .section-bg {
+    background: transparent url(/assets/images/home/section_contact_bg.jpg) center no-repeat;
+    background-size: cover; }
+  .home-content .section-contact .section-title {
+    color: #565f7e; }
+  .home-content .section-contact .section-sub-title {
+    color: #97a1c2; }
+
+.home-content .section-footer {
+  display: table-row; }
+
+.home-content .navbar-nav:before,
+.home-content .navbar-nav:after {
+  content: " ";
+  display: table; }
+
+@media (max-width: 991px) {
+  .home-content .section {
+    padding: 15px 1rem; } }
+
+@media (max-width: 1199px) {
+  .home-content .section {
+    height: 52rem; }
+  .home-content .hero .hero-inner {
+    max-width: 36em;
+    padding-top: 18px; }
+  .home-content .hero .section-title {
+    font-size: 70px;
+    font-size: 70px;
+    line-height: 100px;
+    margin-bottom: 50px; }
+  .home-content .hero .section-sub-title {
+    font-size: 26px;
+    line-height: 50px;
+    max-width: 16em; }
+  .home-content .section-solutions {
+    height: 136rem; }
+    .home-content .section-solutions .card-as-list {
+      text-align: center;
+      margin-bottom: 35px; }
+      .home-content .section-solutions .card-as-list .card-block {
+        padding: 1.25rem .25rem; }
+      .home-content .section-solutions .card-as-list .card-icon {
+        margin: 0 auto;
+        float: none; }
+  .home-content .section-pricing .col-price .subscription-name {
+    font-size: 14px;
+    margin-bottom: 20px; }
+  .home-content .section-pricing .col-price .features {
+    padding-bottom: 100px; }
+  .home-content .section-pricing .col-price .the-price {
+    font-size: 60px;
+    margin-bottom: 20px; }
+  .home-content .section-services .card-block {
+    padding: 0 1rem; }
+  .home-content .section-services .card-title {
+    margin: 30px 0; }
+  .home-content .section-about .row-stats .stat-title {
+    font-size: 150px;
+    line-height: 120px; }
+  .home-content .section-about .row-stats .stat-subtitle {
+    font-size: 22px; }
+  .home-content .section-ready {
+    height: 25rem; } }
+
+@media (max-width: 767px) {
+  .home-content .section .section-title {
+    font-size: 50px;
+    line-height: 100px; }
+  .home-content .section .section-sub-title {
+    font-size: 20px; }
+  .home-content .hero {
+    max-height: 45rem; }
+    .home-content .hero .hero-inner {
+      max-width: 36em;
+      padding-top: 8px; }
+    .home-content .hero .section-title {
+      font-size: 66px;
+      line-height: 90px;
+      margin-bottom: 50px; }
+    .home-content .hero .section-sub-title {
+      font-size: 22px;
+      line-height: 40px;
+      max-width: 16em; }
+  .home-content .section-solutions {
+    height: 212rem; }
+    .home-content .section-solutions .card-as-list {
+      text-align: center;
+      margin-bottom: 35px; }
+      .home-content .section-solutions .card-as-list .card-block {
+        padding: 0 0 1.25rem 0;
+        width: 100%; }
+  .home-content .section-pricing {
+    min-height: 112rem; }
+    .home-content .section-pricing .row-eq-height {
+      display: block; }
+    .home-content .section-pricing .col-price {
+      padding-bottom: 25px;
+      margin: 0 auto 25px;
+      width: 90%;
+      float: none;
+      height: auto !important; }
+      .home-content .section-pricing .col-price .subscription-name {
+        font-size: 14px;
+        margin-bottom: 20px; }
+      .home-content .section-pricing .col-price .features {
+        padding-bottom: 0px;
+        display: block;
+        position: relative;
+        margin: 0 auto; }
+        .home-content .section-pricing .col-price .features li {
+          font-size: 18px;
+          line-height: 26px; }
+  .home-content .section-services {
+    height: 88rem; }
+    .home-content .section-services .card {
+      margin-bottom: 2rem; }
+    .home-content .section-services .card-block {
+      padding: 0 1rem; }
+    .home-content .section-services .card-title {
+      margin: 30px 0; }
+  .home-content .section-about {
+    height: 36rem; }
+    .home-content .section-about .section-sub-title {
+      width: 90%; }
+    .home-content .section-about .row-stats {
+      margin-top: 80px; }
+    .home-content .section-about .row-stats .stat-title {
+      font-size: 120px;
+      line-height: 90px; }
+    .home-content .section-about .row-stats .stat-subtitle {
+      font-size: 19px; }
+  .home-content .section-ready {
+    height: 22rem; } }
+
+@media (max-width: 575px) {
+  .home-content .section .section-title {
+    font-size: 50px;
+    line-height: 100px; }
+  .home-content .section .section-sub-title {
+    font-size: 20px; }
+  .home-content .hero .hero-inner {
+    max-width: 8em;
+    padding-top: 8px; }
+  .home-content .hero,
+  .home-content .hero .section-title {
+    font-size: 54px;
+    line-height: 70px;
+    margin-bottom: 50px; }
+  .home-content .hero .section-sub-title {
+    font-size: 22px;
+    line-height: 40px;
+    max-width: 11em; }
+  .home-content .section-solutions {
+    height: 216rem; }
+    .home-content .section-solutions .card-as-list {
+      text-align: center;
+      margin-bottom: 35px; }
+      .home-content .section-solutions .card-as-list .card-block {
+        padding: 0 0 1.25rem 0;
+        width: 100%; }
+  .home-content .section-pricing {
+    height: 112rem; }
+    .home-content .section-pricing .col-price .subscription-name {
+      font-size: 14px;
+      margin-bottom: 20px; }
+    .home-content .section-pricing .col-price .features li {
+      font-size: 16px;
+      line-height: 26px; }
+  .home-content .section-services {
+    height: 92rem; }
+    .home-content .section-services .card {
+      margin-bottom: 2rem; }
+    .home-content .section-services .card-block {
+      padding: 0 1rem; }
+    .home-content .section-services .card-title {
+      margin: 30px 0; }
+  .home-content .section-about {
+    height: 40rem; }
+    .home-content .section-about .row-stats .stat-title {
+      font-size: 80px;
+      line-height: 90px; }
+    .home-content .section-about .row-stats .stat-subtitle {
+      font-size: 19px; }
+  .home-content .section-ready {
+    height: 22rem; } }
+
+@media (max-width: 543px) {
+  .home-content .section .section-title {
+    font-size: 50px;
+    line-height: 100px; }
+  .home-content .section .section-sub-title {
+    font-size: 20px; }
+  .home-content .section-solutions {
+    height: 228rem; }
+    .home-content .section-solutions .card-as-list {
+      text-align: center;
+      margin-bottom: 35px; }
+      .home-content .section-solutions .card-as-list .card-block {
+        padding: 0 0 1.25rem 0;
+        width: 100%; }
+  .home-content .section-pricing {
+    height: 112rem; }
+    .home-content .section-pricing .col-price .subscription-name {
+      font-size: 14px;
+      margin-bottom: 20px; }
+    .home-content .section-pricing .col-price .features li {
+      font-size: 16px;
+      line-height: 26px; }
+  .home-content .section-services {
+    height: 92rem; }
+    .home-content .section-services .card {
+      margin-bottom: 2rem; }
+    .home-content .section-services .card-block {
+      padding: 0 1rem; }
+    .home-content .section-services .card-title {
+      margin: 30px 0; }
+  .home-content .section-about {
+    height: 60rem; }
+    .home-content .section-about .row-stats {
+      margin-top: 60px; }
+    .home-content .section-about .row-stats .stat-title {
+      font-size: 80px;
+      line-height: 90px;
+      margin-top: 30px; }
+    .home-content .section-about .row-stats .stat-subtitle {
+      font-size: 19px; }
+  .home-content .section-ready {
+    height: 22rem; } }
+
+@media (max-width: 480px) {
+  .home-content .section .section-title {
+    font-size: 50px;
+    line-height: 70px; }
+  .home-content .section .section-sub-title {
+    font-size: 18px;
+    line-height: 28px; }
+  .home-content .hero {
+    max-height: 46rem; }
+    .home-content .hero .hero-inner {
+      max-width: 100%;
+      width: 100%;
+      text-align: center; }
+    .home-content .hero .section-bg {
+      background: url(/assets/images/home/section_hero_bg-dk.jpg) top center no-repeat;
+      background-size: cover; }
+    .home-content .hero .section-title {
+      font-size: 65px;
+      line-height: 80px; }
+    .home-content .hero .section-sub-title {
+      font-size: 20px;
+      line-height: 34px;
+      width: 100%;
+      max-width: 100%; }
+  .home-content .section-solutions {
+    height: 238rem; }
+    .home-content .section-solutions .card-as-list {
+      text-align: center;
+      margin-bottom: 35px; }
+      .home-content .section-solutions .card-as-list .card-block {
+        padding: 0 0 1.25rem 0;
+        width: 100%; }
+  .home-content .section-pricing {
+    height: 106rem; }
+    .home-content .section-pricing .row-eq-height {
+      display: block; }
+    .home-content .section-pricing .col-price {
+      margin: 0 auto 25px;
+      width: 90%;
+      float: none;
+      height: auto !important;
+      padding-bottom: 25px; }
+      .home-content .section-pricing .col-price .subscription-name {
+        font-size: 14px;
+        margin-bottom: 20px; }
+      .home-content .section-pricing .col-price .features li {
+        font-size: 16px;
+        line-height: 26px; }
+  .home-content .section-services {
+    height: 90rem; }
+    .home-content .section-services .card {
+      margin-bottom: 2rem; }
+    .home-content .section-services .card-block {
+      padding: 0 1rem; }
+    .home-content .section-services .card-title {
+      margin: 30px 0; }
+  .home-content .section-about {
+    height: 56rem; }
+    .home-content .section-about .row-stats {
+      margin-top: 60px; }
+    .home-content .section-about .row-stats .stat-title {
+      font-size: 80px;
+      line-height: 90px;
+      margin-top: 30px; }
+    .home-content .section-about .row-stats .stat-subtitle {
+      font-size: 19px; }
+  .home-content .section-ready {
+    height: 24rem; }
+    .home-content .section-ready .cta-group .btn,
+    .home-content .section-ready .cta-group .btn:last-of-type {
+      margin: 0; }
+    .home-content .section-ready .cta-group .btn {
+      margin-bottom: 10px !important; } }
+
+@media (max-width: 414px) {
+  .home-content .section-solutions {
+    min-height: 236rem; }
+  .home-content .section-pricing {
+    min-height: 108rem; }
+  .home-content .section-services {
+    min-height: 96rem; }
+  .home-content .section-about {
+    min-height: 58rem; }
+  .home-content .section-ready {
+    min-height: 26rem; }
+  .home-content .section-contact {
+    height: 24rem; } }
+
+@media (max-width: 400px) {
+  .home-content .hero {
+    max-height: 40rem; }
+    .home-content .hero .section-title {
+      font-size: 56px;
+      line-height: 76px; }
+    .home-content .hero .section-sub-title {
+      font-size: 16px;
+      line-height: 36px; }
+  .home-content .section-solutions {
+    min-height: 254rem; }
+  .home-content .section-services {
+    min-height: 95rem; }
+  .home-content .section-pricing {
+    min-height: 110rem; }
+  .home-content .section-about {
+    min-height: 58rem; }
+  .home-content .section-ready {
+    min-height: 28rem; } }
+
+@media (max-width: 375px) {
+  .home-content .section-solutions {
+    min-height: 246rem; }
+  .home-content .section-pricing {
+    min-height: 109rem; }
+  .home-content .section-contact {
+    height: 24rem; } }
+
+@media (max-width: 320px) {
+  .home-content .hero {
+    max-height: 36rem; }
+    .home-content .hero .navbar-nav .nav-item {
+      margin-bottom: 10px; }
+    .home-content .hero .section-title {
+      font-size: 46px;
+      line-height: 66px;
+      margin-bottom: 26px; }
+  .home-content .section-solutions {
+    min-height: 284rem; }
+  .home-content .section-pricing {
+    min-height: 112rem; }
+  .home-content .section-services {
+    min-height: 98rem; }
+  .home-content .section-about {
+    min-height: 60rem; } }
+
+/*# sourceMappingURL=home.css.map */

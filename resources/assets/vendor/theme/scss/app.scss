@@ -1,0 +1,54 @@
+@import "../bootstrap/scss/_mixins.scss";
+@import "../bootstrap/scss/_variables.scss";
+@import "mixins.scss";
+@import "variables.scss";
+@import "variables.md.scss";
+
+@import "bs.scss";
+@import "ui.scss";
+@import "utils.scss";
+@import "md.scss";
+@import "../font-awesome/scss/font-awesome";
+@import "../material-design-icons/material-design-icons.scss";
+@import "../animate.css/animate.min.scss";
+@import "bs.alert.scss";
+@import "algolia.scss";
+@import "ui.media";
+@import "pages/shipping";
+@import "pages/popout";
+@import "pages/inventory";
+@import "pages/bodymenu";
+@import "pages/spinner";
+@import "pages/onboard";
+@import "pages/backtotop";
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background-color: #fff !important;
+}
+
+.app {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.home-content {
+  .app {
+    display: block;
+  }
+  .app-footer {
+    display: block;
+  }
+}
+
+.app-footer {
+  display: table-row;
+}
+
+.turbolinks-progress-bar {
+  height: 2px;
+  background-color: #a88add
+}

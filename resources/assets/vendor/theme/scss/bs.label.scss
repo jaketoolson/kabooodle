@@ -1,0 +1,71 @@
+.label{
+  padding: .25em .5em;
+  &.no-bg{
+    background-color: transparent;
+    color: inherit;
+  }
+  font-weight: bold; 
+  background-color: $label-bg;
+}
+
+.label{
+  &.up{
+    position: relative;
+    top: -10px;
+    min-width: 4px;
+    min-height: 4px;
+    display: inline-block;
+  }
+}
+
+.label-lg{
+  font-size: 1.33rem;
+  padding: 5px 9px;
+}
+
+.label-sm{
+  padding: 1px 4px;
+}
+
+.label-xs{
+  padding: 0px 3px;
+}
+
+.list-group-item.active > .label, 
+.nav-pills > .active > a > .label{
+  color: $dark-black;
+}
+
+
+.label {
+  &.outline {
+    background-color: transparent;
+    color: darken($light, 40%);
+    border: 1px solid darken($light, 25%);
+    &:hover {
+      color: darken($light, 60%);
+    }
+    &.success {
+      background-color: $success;
+    }
+  }
+}
+
+.label.indicator {
+  padding: 0 !important;
+  min-width: 11px;
+  min-height: 11px;
+  height: 11px !important;
+  width: 11px !important;
+  right: 2px;
+  position: relative;
+  top: -7px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.label.label-primary,
+.label-primary {
+  background-color: $primary;
+  color: #fff;
+}

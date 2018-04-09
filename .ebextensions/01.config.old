@@ -1,0 +1,37 @@
+option_settings:
+  - namespace: aws:elasticbeanstalk:command
+    option_name: Timeout
+    value: 1800
+commands:
+  create_post_dir:
+    command: "mkdir /opt/elasticbeanstalk/hooks/appdeploy/post"
+    ignoreErrors: true
+files:
+  "/opt/elasticbeanstalk/hooks/appdeploy/post/99_clear_opcache.sh":
+    mode: "000755"
+    owner: root
+    group: root
+    content: |
+      #!/usr/bin/env bash
+      . /opt/elasticbeanstalk/support/envvars
+      cd $EB_CONFIG_APP_CURRENT
+      php /var/app/current/artisan opcache:clear
+  "/etc/php-7.0.d/project.ini" :
+    mode: "000644"
+    owner: root
+    group: root
+    content: |
+      upload_max_filesize = 9G
+      max_execution_time = 500
+      max_input_time = 500
+      memory_limit = 2048M
+      post_max_size = 9G
+      max_input_vars = 100000
+container_commands:
+    01-migration:
+        command: "php /var/app/ondeck/artisan migrate --force > /tmp/artisan-migrate.log"
+        leader_only: true
+    02-clear-compiled:
+        command: "php /var/app/ondeck/artisan clear-compiled"
+    03-optimize:
+        command: "php /var/app/ondeck/artisan optimize --force"

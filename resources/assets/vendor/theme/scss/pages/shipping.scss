@@ -1,0 +1,134 @@
+$incomplete : #dedede;
+$complete : #bbb;
+$textcolor : #8f8f8f;
+
+
+#claimed_items_container {
+  margin: 10px 0;
+  .select2-selection__rendered {
+    font-size: .75rem;
+    display: block;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid $input-border;
+    border-radius: .25rem;
+    img {
+      width: 20px;
+    }
+    .del-claim {
+      color: $warning;
+      cursor: pointer;
+      margin-top: 6px;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+
+.timeline {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .li {
+    transition: all 200ms ease-in;
+    min-width: 160px;
+    &.complete .status {
+      border-top: 10px solid #66DC71;
+    }
+    &.complete .status:before {
+      background-color: #66DC71;
+      border-radius: 13px;
+      border-color: #66DC71;
+      transition: all 200ms ease-in;
+    }
+    &.complete .status h4 {
+      color: #66DC71;
+    }
+    &.incomplete .status {
+      border-color: $incomplete;
+      &:before {
+        background-color:$incomplete;
+        border-color:$incomplete;
+      }
+    }
+  }
+  .timestamp {
+    color: $textcolor !important;
+    margin-bottom: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .75rem;
+  }
+  .status {
+    color: $textcolor !important;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    border-top: 10px solid $complete;
+    position: relative;
+    transition: all 200ms ease-in;
+  }
+  .status h4 {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  .status:before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: $complete;
+    border-radius: 25px;
+    border: 10px solid $complete;
+    position: absolute;
+    margin-left: -12.5px;
+    top: -17px;
+    left: 50%;
+    transition: all 200ms ease-in;
+  }
+}
+@media only screen and (max-width : 767px){
+  .timeline {
+    list-style-type: none;
+    .li {
+      transition: all 200ms ease-in;
+      display: inline-block;
+      width: 70px;
+      min-width: 70px;
+    }
+    .status:before {
+      top: -14px;
+      width: 13px;
+      height: 13px;
+      border-radius: 13px;
+    }
+  }
+}
+
+@media (min-device-width: 320px) and (max-device-width: 700px) {
+  .timeline {
+    list-style-type: none;
+    display: block;
+    .li {
+      transition: all 200ms ease-in;
+      display: flex;
+      min-width: 60px;
+    }
+    .timestamp {
+      width: 100px;
+    }
+    .status:before {
+      left: -8%;
+      top: 30%;
+      width: 15px;
+      height: 15px;
+      transition: all 200ms ease-in;
+    }
+  }
+}
